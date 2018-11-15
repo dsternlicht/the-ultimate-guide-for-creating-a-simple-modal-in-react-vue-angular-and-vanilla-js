@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css" />
+
+<button id="button">Please Click Me, You Won't Regret It! 😜</button>
+
+<div class="popup" style="display: none">
+  <div class="overlay"></div>
+  <div class="popup_content">
+    <!-- Dynamic Section -->
+    <h2>Told Ya!</h2>
+    <iframe src="https://giphy.com/embed/l52CGyJ4LZPa0" width="480" height="273" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sandler-sentences-sounding-l52CGyJ4LZPa0">via GIPHY</a></p>
+    <!-- End of Dynamic Section -->
+    <button title="Close" class="close_popup">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+
+<script>
+  var btn = document.getElementById('button');
+  var popup = document.querySelector('.popup');
+
+  function togglePopup() {
+    var currentState = popup.style.display;
+
+    // If popup is visible, hide it. Else, display it.
+    if (currentState === 'block') {
+      popup.style.display = 'none';
+      detachPopupListeners(popup);
+    } else {
+      popup.style.display = 'block';
+      attachPopupListeners(popup);
+    }
+  }
+
+  function attachPopupListeners(popupElm) {
+    popupElm.querySelector('.close_popup').addEventListener('click', togglePopup);
+    popupElm.querySelector('.overlay').addEventListener('click', togglePopup);
+  }
+
+  function detachPopupListeners(popupElm) {
+    popupElm.querySelector('.close_popup').removeEventListener('click', togglePopup);
+    popupElm.querySelector('.overlay').removeEventListener('click', togglePopup);
+  }
+
+  btn.addEventListener('click', function(e) {
+    togglePopup(popup);
+  });
+</script>

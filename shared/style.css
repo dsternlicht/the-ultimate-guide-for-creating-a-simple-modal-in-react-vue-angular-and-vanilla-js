@@ -1,7 +1,3 @@
-body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 .popup {
   position: fixed;
   left: 0;
@@ -41,10 +37,6 @@ body {
   font-weight: 200;
   margin: 20px 0 40px;
   text-align: center;
-}
-
-.popup .popup_content .buttons_wrapper {
-  padding: 20px;
 }
 
 .popup .close_popup {
