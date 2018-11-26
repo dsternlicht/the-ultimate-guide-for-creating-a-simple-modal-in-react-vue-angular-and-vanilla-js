@@ -1,0 +1,8 @@
+*:focus {
+  outline: 0;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(120deg, #f1c40f 0%, #f1870f 100%);
+}
