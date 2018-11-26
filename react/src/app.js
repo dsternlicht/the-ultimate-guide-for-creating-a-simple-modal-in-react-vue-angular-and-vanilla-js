@@ -21,6 +21,7 @@ class App extends Component {
         <button className="popup_opener" onClick={this.togglePopup}>
           Click Me! I Don't Bite... <span role="img" aria-label="emoji">😛</span>
         </button>
+        
         <Popup
           show={this.state.showPopup}
           closeCallback={this.togglePopup}
