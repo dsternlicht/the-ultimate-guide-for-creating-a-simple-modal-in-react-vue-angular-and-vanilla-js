@@ -25,6 +25,7 @@ class App extends Component {
         <Popup
           show={this.state.showPopup}
           closeCallback={this.togglePopup}
+          customClass="custom_popup_class"
         >
           <React.Fragment>
             <h2>Told Ya!</h2>

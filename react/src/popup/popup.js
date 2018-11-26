@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import './popup.css';
 
-const Popup = ({ children, className, show, closeCallback }) => (
-  <div className={`popup ${className}`} style={{ display: show ? 'block' : 'none'}}>
+const Popup = ({ children, customClass, show, closeCallback }) => (
+  <div className={`popup ${customClass}`} style={{ display: show ? 'block' : 'none'}}>
     <div className="overlay" onClick={closeCallback}></div>
     <div className="popup_content">
       {children}
@@ -17,14 +17,14 @@ const Popup = ({ children, className, show, closeCallback }) => (
 
 Popup.propTypes = {
   children: PropTypes.element,
-  className: PropTypes.string,
+  customClass: PropTypes.string,
   show: PropTypes.bool,
   closeCallback: PropTypes.func,
 };
 
 Popup.defaultProps = {
   children: <div>Empty Popup</div>,
-  className: '',
+  customClass: '',
   show: false,
   closeCallback: () => (false)
 };
