@@ -1,5 +1,5 @@
 <template>
-  <div class="popup" v-bind:style="{ display: show ? 'block' : 'none' }">
+  <div class="popup" v-bind:class="customClass" v-bind:style="{ display: show ? 'block' : 'none' }">
     <div class="overlay" @click="closeCallback()"></div>
     <div class="popup_content">
       <slot></slot>
