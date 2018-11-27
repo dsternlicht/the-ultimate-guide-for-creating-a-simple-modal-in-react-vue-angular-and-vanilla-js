@@ -5,8 +5,7 @@
     </button>
 
     <Popup
-      v-bind:show="show"
-      v-bind="{ closeCallback: togglePopup, customClass: 'custom_popup_class'}"
+      v-bind="{ closeCallback: togglePopup, show, customClass: 'custom_popup_class'}"
     >
       <h2>Told Ya!</h2>
       <iframe title="giphy" src="https://giphy.com/embed/l52CGyJ4LZPa0" width="480" height="273" frameBorder="0" className="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sandler-sentences-sounding-l52CGyJ4LZPa0">via GIPHY</a></p>
