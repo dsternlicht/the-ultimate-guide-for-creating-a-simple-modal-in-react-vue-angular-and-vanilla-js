@@ -1,2 +1,3 @@
-# extremely-simple-popup-react-vue-angular-vanilla
-Creating an Extremely Simple Popup Component in Pure JavaScript, React, Angular, and Vue
+# The Ultimate Popup Guide in Vanilla JS, React, Vue, and Angular
+
+This repo contains an example of how to create an extremely simple popup component in vanilla js, React, Vue, and Angular.
