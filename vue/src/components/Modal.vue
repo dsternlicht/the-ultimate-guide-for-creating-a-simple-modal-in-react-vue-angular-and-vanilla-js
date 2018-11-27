@@ -1,9 +1,9 @@
 <template>
-  <div class="popup" v-bind:class="customClass" v-bind:style="{ display: show ? 'block' : 'none' }">
+  <div class="modal" v-bind:class="customClass" v-bind:style="{ display: show ? 'block' : 'none' }">
     <div class="overlay" @click="closeCallback()"></div>
-    <div class="popup_content">
+    <div class="modal_content">
       <slot></slot>
-      <button title="Close" class="close_popup" @click="closeCallback()">
+      <button title="Close" class="close_modal" @click="closeCallback()">
         <i class="fas fa-times"></i>
       </button>
     </div>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'Popup',
+  name: 'Modal',
   props: {
     show: Boolean,
     customClass: String,
@@ -23,7 +23,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.popup {
+.modal {
   position: fixed;
   left: 0;
   top: 0;
@@ -32,7 +32,7 @@ export default {
   z-index: 990;
 }
 
-.popup .overlay {
+.modal .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -42,7 +42,7 @@ export default {
   background: rgba(0,0,0,0.85);
 }
 
-.popup .popup_content {
+.modal .modal_content {
   z-index: 999;
   position: absolute;
   top: 50%;
@@ -58,18 +58,18 @@ export default {
   width: 520px; /* This just a default width */
 }
 
-.popup .popup_content > h2 {
+.modal .modal_content > h2 {
   font-size: 28px;
   font-weight: 200;
   margin: 20px 0 40px;
   text-align: center;
 }
 
-.popup .popup_content .buttons_wrapper {
+.modal .modal_content .buttons_wrapper {
   padding: 20px;
 }
 
-.popup .close_popup {
+.modal .close_modal {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -81,7 +81,7 @@ export default {
   transition: opacity 0.2s ease;
 }
 
-.popup .close_popup:hover {
+.modal .close_modal:hover {
   opacity: 0.9;
 }
 </style>

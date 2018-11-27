@@ -1,6 +1,6 @@
 {
-  "short_name": "Popup App",
-  "name": "Popup App Sample",
+  "short_name": "Modal App",
+  "name": "Modal App Sample",
   "icons": [
     {
       "src": "favicon.ico",

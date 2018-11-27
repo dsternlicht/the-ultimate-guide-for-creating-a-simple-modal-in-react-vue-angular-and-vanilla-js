@@ -1,31 +1,31 @@
 <template>
   <div id="app">
-    <button class="popup_opener" v-on:click="togglePopup()">
+    <button class="modal_opener" v-on:click="toggleModal()">
       Click Me! I Don't Bite... <span role="img" aria-label="emoji">😛</span>
     </button>
 
-    <Popup
-      v-bind="{ closeCallback: togglePopup, show, customClass: 'custom_popup_class'}"
+    <Modal
+      v-bind="{ closeCallback: toggleModal, show, customClass: 'custom_modal_class'}"
     >
       <h2>Told Ya!</h2>
       <iframe title="giphy" src="https://giphy.com/embed/l52CGyJ4LZPa0" width="480" height="273" frameBorder="0" className="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sandler-sentences-sounding-l52CGyJ4LZPa0">via GIPHY</a></p>
-    </Popup>
+    </Modal>
   </div>
 </template>
 
 <script>
-import Popup from './components/Popup.vue'
+import Modal from './components/Modal.vue'
 
 export default {
   name: 'app',
   components: {
-    Popup
+    Modal
   },
   data: () => ({
     show: false
   }),
   methods: {
-    togglePopup: function() {
+    toggleModal: function() {
       this.show = !this.show;
     }
   }
@@ -40,7 +40,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-image: linear-gradient(120deg, #f1c40f 0%, #f1870f 100%);
 }
-.popup_opener {
+.modal_opener {
   background: #3498db;
   padding: 4px 0;
   position: absolute;
@@ -58,12 +58,12 @@ body {
   transition: background 0.2s ease;
 }
 
-.popup_opener:hover {
+.modal_opener:hover {
   cursor: pointer;
   background: #469fdb;
 }
   
-.popup_opener::after {
+.modal_opener::after {
   content: "";
   display: block;
   position: absolute;

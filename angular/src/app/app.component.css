@@ -1,4 +1,4 @@
-.popup_opener {
+.modal_opener {
   background: #3498db;
   padding: 4px 0;
   position: absolute;
@@ -16,12 +16,12 @@
   transition: background 0.2s ease;
 }
 
-.popup_opener:hover {
+.modal_opener:hover {
   cursor: pointer;
   background: #469fdb;
 }
   
-.popup_opener::after {
+.modal_opener::after {
   content: "";
   display: block;
   position: absolute;

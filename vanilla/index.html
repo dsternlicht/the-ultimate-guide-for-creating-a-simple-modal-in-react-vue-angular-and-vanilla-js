@@ -1,28 +1,28 @@
 <html>
   <head>
-    <title>Vanilla Popup</title>
+    <title>Vanilla Modal</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- CSS Import -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Clicking this button will open the popup -->
-    <button id="popup_opener">Click Me! I Don't Bite... 😛</button>
+    <!-- Clicking this button will open the modal -->
+    <button id="modal_opener">Click Me! I Don't Bite... 😛</button>
 
-    <div class="popup" style="display: none">
+    <div class="modal" style="display: none">
       <div class="overlay"></div>
-      <div class="popup_content">
+      <div class="modal_content">
         <!-- Dynamic Section -->
         <h2>Told Ya!</h2>
         <iframe src="https://giphy.com/embed/l52CGyJ4LZPa0" width="480" height="273" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sandler-sentences-sounding-l52CGyJ4LZPa0">via GIPHY</a></p>
         <!-- End of Dynamic Section -->
-        <button title="Close" class="close_popup">
+        <button title="Close" class="close_modal">
           <i class="fas fa-times"></i>
         </button>
       </div>
     </div>
     
     <!-- Main script Import -->
-    <script src="./popup.js"></script>
+    <script src="./modal.js"></script>
   </body>
 </html>

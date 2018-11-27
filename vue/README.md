@@ -1,4 +1,4 @@
-# popup-app
+# modal-app
 
 ## Project setup
 ```

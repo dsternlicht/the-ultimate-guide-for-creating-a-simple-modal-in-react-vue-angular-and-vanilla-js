@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'popup-app';
-  showPopup = false;
+  title = 'modal-app';
+  showModal = false;
 
-  togglePopup = () => {
-    this.showPopup = !this.showPopup;
+  toggleModal = () => {
+    this.showModal = !this.showModal;
   }
 }

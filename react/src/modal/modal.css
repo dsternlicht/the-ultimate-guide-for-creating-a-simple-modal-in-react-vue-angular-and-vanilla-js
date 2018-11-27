@@ -1,4 +1,4 @@
-.popup {
+.modal {
   position: fixed;
   left: 0;
   top: 0;
@@ -7,7 +7,7 @@
   z-index: 990;
 }
 
-.popup .overlay {
+.modal .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -17,7 +17,7 @@
   background: rgba(0,0,0,0.85);
 }
 
-.popup .popup_content {
+.modal .modal_content {
   z-index: 999;
   position: absolute;
   top: 50%;
@@ -33,18 +33,18 @@
   width: 520px; /* This just a default width */
 }
 
-.popup .popup_content > h2 {
+.modal .modal_content > h2 {
   font-size: 28px;
   font-weight: 200;
   margin: 20px 0 40px;
   text-align: center;
 }
 
-.popup .popup_content .buttons_wrapper {
+.modal .modal_content .buttons_wrapper {
   padding: 20px;
 }
 
-.popup .close_popup {
+.modal .close_modal {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -56,6 +56,6 @@
   transition: opacity 0.2s ease;
 }
 
-.popup .close_popup:hover {
+.modal .close_modal:hover {
   opacity: 0.9;
 }

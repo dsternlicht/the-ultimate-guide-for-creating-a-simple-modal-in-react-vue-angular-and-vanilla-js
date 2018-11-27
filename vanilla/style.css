@@ -7,7 +7,7 @@ body {
   background-image: linear-gradient(120deg, #f1c40f 0%, #f1870f 100%);
 }
 
-#popup_opener {
+#modal_opener {
   background: #3498db;
   padding: 4px 0;
   position: absolute;
@@ -25,12 +25,12 @@ body {
   transition: background 0.2s ease;
 }
 
-#popup_opener:hover {
+#modal_opener:hover {
   cursor: pointer;
   background: #469fdb;
 }
   
-#popup_opener::after {
+#modal_opener::after {
   content: "";
   display: block;
   position: absolute;
@@ -44,7 +44,7 @@ body {
   bottom: -30px;
 }
 
-.popup {
+.modal {
   position: fixed;
   left: 0;
   top: 0;
@@ -53,7 +53,7 @@ body {
   z-index: 990;
 }
 
-.popup .overlay {
+.modal .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -63,7 +63,7 @@ body {
   background: rgba(0,0,0,0.85);
 }
 
-.popup .popup_content {
+.modal .modal_content {
   z-index: 999;
   position: absolute;
   top: 50%;
@@ -79,18 +79,18 @@ body {
   width: 520px; /* This just a default width */
 }
 
-.popup .popup_content > h2 {
+.modal .modal_content > h2 {
   font-size: 28px;
   font-weight: 200;
   margin: 20px 0 40px;
   text-align: center;
 }
 
-.popup .popup_content .buttons_wrapper {
+.modal .modal_content .buttons_wrapper {
   padding: 20px;
 }
 
-.popup .close_popup {
+.modal .close_modal {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -102,6 +102,6 @@ body {
   transition: opacity 0.2s ease;
 }
 
-.popup .close_popup:hover {
+.modal .close_modal:hover {
   opacity: 0.9;
 }

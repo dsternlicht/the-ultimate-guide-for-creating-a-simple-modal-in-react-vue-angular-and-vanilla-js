@@ -1,0 +1,9 @@
+<div [ngClass]="customClass || ''" class="modal" [ngStyle]="{display: show ? 'block' : 'none'}">
+  <div class="overlay" (click)="closeCallback()"></div>
+  <div class="modal_content">
+    <ng-content></ng-content>
+    <button title="Close" class="close_modal" (click)="closeCallback()">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>

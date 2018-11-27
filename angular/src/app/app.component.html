@@ -1,14 +1,14 @@
 <div class="app">
-  <button class="popup_opener" (click)="togglePopup()">
+  <button class="modal_opener" (click)="toggleModal()">
     Click Me! I Don't Bite... <span role="img" aria-label="emoji">😛</span>
   </button>
   
-  <app-popup
-    [show]="showPopup"
-    [customClass]="'custom_popup_class'"
-    [closeCallback]="togglePopup"
+  <app-modal
+    [show]="showModal"
+    [customClass]="'custom_modal_class'"
+    [closeCallback]="toggleModal"
   >
     <h2>Told Ya!</h2>
     <iframe title="giphy" src="https://giphy.com/embed/l52CGyJ4LZPa0" width="480" height="273" frameBorder="0" className="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sandler-sentences-sounding-l52CGyJ4LZPa0">via GIPHY</a></p>
-  </app-popup>
+  </app-modal>
 </div>
